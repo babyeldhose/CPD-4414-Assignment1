@@ -26,7 +26,54 @@ public class Assignment1 {
 public static void placeOrders()
 {
     Scanner in= new Scanner(System.in);
+     System.out.println("enter your customer  id");
+     try{
+    custid=in.nextInt();
+    in.nextLine();
+     }
+     catch(Exception e)
+     {
+         System.out.println("We got some problem:" +e);
+     }
+    System.out.println("enter your name");
     
+    try{
+    custname=in.nextLine();
+    }
+     catch(Exception e)
+     {
+         System.out.println("We got some problem:" +e);
+     }
+    System.out.println("enter product name you wanna purchase");
+    
+    try
+    {
+     productname=in.nextLine();
+     
+    }
+      catch(Exception e)
+     {
+         System.out.println("We got some problem:" +e);
+     }
+     System.out.println("enter product quantity");
+     try{
+         
+     
+      quantity=in.nextInt();
+      in.nextLine();
+     }
+      catch(Exception e)
+     {
+         System.out.println("We got some problem:" +e);
+     }
+       System.out.println("enter some notes");
+       try{
+            notes=in.nextLine();
+       }
+       catch(Exception e)
+     {
+         System.out.println("We got some problem:" +e);
+     }
    
      ArrayList<order> or = new ArrayList<order>();
        order myorders=new order();
