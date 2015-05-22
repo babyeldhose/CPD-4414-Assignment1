@@ -28,7 +28,20 @@ public static void placeOrders()
     Scanner in= new Scanner(System.in);
     
    
-    
+     ArrayList<order> or = new ArrayList<order>();
+       order myorders=new order();
+       myorders.setCustomerID(custid);
+       myorders.setCustomerName(custname);
+       myorders.setProductID(productname);
+       myorders.setQuantity(quantity);
+       myorders.setNotes(notes);
+       DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	   Date date = new Date();
+	   String dd= dateFormat.format(date); 
+       or.add(myorders);
+       
+       System.out.println("");
+       
     
 }
     /**
