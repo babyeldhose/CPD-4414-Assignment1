@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author c0654874
+ * @author c0654335
  */
 public class Assignment1 {
     static int  custid;
@@ -75,8 +75,8 @@ public static void placeOrders()
          System.out.println("We got some problem:" +e);
      }
    
-     ArrayList<order> or = new ArrayList<order>();
-       order myorders=new order();
+    ArrayList<order> or = new ArrayList<order>();
+       order myorders = new order();
        myorders.setCustomerID(custid);
        myorders.setCustomerName(custname);
        myorders.setProductID(productname);
